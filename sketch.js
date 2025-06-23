@@ -274,7 +274,7 @@ function preload(){
     pokeballSprite = loadImage("pokeballs/pokeball.png")
     pokeballCaughtSprite = loadImage("pokeballs/pokeballcaught.png")
 
-    tempPokemonImage = loadImage("front/Lillipup.png")
+    tempPokemonImage = loadImage("front/lillipup.png")
     
 
 }
