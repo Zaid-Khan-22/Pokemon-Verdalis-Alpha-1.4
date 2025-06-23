@@ -2,7 +2,7 @@
 let t1,t2,t3,t4,t5,t6,t7,t8,i = 0
 let temp = 0;
 let npctalk = [false,false,false,false,false]
-let noOfPokemonLeft = 1
+let noOfPokemonLeft = 0
 let trainerImg
 
 let pokemon1Img = null,pokemon2Img = null,pokemon3Img = null
@@ -283,14 +283,14 @@ function setup() {
   cnv.parent(document.body);
   cnv.style('z-index', '-1');
 
-  gameState = 3.3;
-  bgState = 6;
+  gameState = 0;
+  bgState = 0;
   move = true;
   moving = false
   interact = false;
   chat = false;
   battlingChat = false
-  starterPokemon = "Mudkip"
+  starterPokemon = ""
   menuCreated = false
   menuIndex = 0
   subIndex = -10
@@ -313,7 +313,7 @@ function setup() {
   tc = false;
   gc = false
   wc = false
-  playerLocation = "twin_lake_path"
+  playerLocation = ""
   mult = 10
 
   pokeballImage = null
@@ -352,13 +352,12 @@ function setup() {
   option2 = ""
   option3 = ""
 
-  playerName = "Zaid";
+  playerName = "";
   inputCreated = false;
 
-  party = [new Pokemon("Chimchar",10,pokedex,moveDB,[],null,0)]
-  console.log(party[0])
-  noOfPartyPokemon = 1
-  noOfPokemon = 1
+  party = []
+  noOfPartyPokemon = 0
+  noOfPokemon = 0
   pc = []
   
 
